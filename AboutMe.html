@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h2 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="theme-music" controls style="display: none;">
+        <source src="./Nettspend We Not Like You Piano Instrumental.mp3" type="audio/mp3">
+</audio>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <h2>My name is Joao Pedro Neves, my whole family is from Brazil, however, I myself was born in Boca Raton, Florida.</h2>
+        <h2>I go by Jp due to a lot of people not being able to pronounce my name correctly.</h2>
+        <h2>I am a middle school graduate from Slam Boca Raton and now am in my freshman year in high school, attending Pompano Beach High School.</h2>
+        <h2>I have been playing all kinds of video games all my life, and took interest in coding very quickly after learning some from my IT teacher Mr. Lawrence.</h2>
+        <button class="sound"onclick="playAudio()" class="btn btn-outline-secondary btn-lg mt-4 px-5">nettspend button</button>
+    </div>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("theme-music");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
